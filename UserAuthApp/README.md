@@ -21,7 +21,7 @@ This is a simple web application built using **Flask** for user authentication. 
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/UserAuthApp.git cd UserAuthApp
+git clone -
 
 arduino
 
