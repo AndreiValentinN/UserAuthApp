@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        .row {
+            margin: 15px 0;
+            text-align: center;
+        }
+        .gfg {
+            font-size: 25px;
+            color: orangered;
+            font-style: italic;
+        }
+        a {
+            color: orangered;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            padding: 10px 15px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <h2>User Profile</h2>
+    </div>
+
+    <div class="row">
+        Logged in as: <strong class="gfg">{{ session.name }}</strong>
+        | <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+    </div>
+
+    <div class="row">
+        <h3>Welcome to your profile page!</h3>
+        <p>Here, you can manage your account settings, update your profile, and more.</p>
+    </div>
+</div>
+
+</body>
+</html>
